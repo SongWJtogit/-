@@ -1,0 +1,42 @@
+#自定义 端口
+server:
+  port: 8081
+spring:
+  datasource:
+    druid:
+      stat-view-servlet:
+        login-username: e3new
+        login-password: e3new.2017
+    dynamic:
+      master:
+        url: jdbc:oracle:thin:@10.1.1.210:1521:athenats
+        username: e3new
+        password: e3new.2017
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+#mybaits-plus配置，修改主键类型，mapper.xml、type 别名等
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/*.xml
+  type-Aliases-Package: com.example.sureoa.dao.entity
+  global-config:
+    #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+    id-type: 0
+    #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+    field-strategy: 0
+    #驼峰下划线转换
+    db-column-underline: true
+    #刷新mapper 调试神器
+    refresh-mapper: true
+    #数据库大写下划线转换
+    capital-mode: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    lazyLoadingEnabled: true
+    jdbcTypeForNull: NULL
+    multipleResultSetsEnabled: true
+logging:
+  config: classpath:logback.xml
+  level:
+    com.huan.shiro.dao.mapper: debug
+

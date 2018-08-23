@@ -1,0 +1,49 @@
+2018-08-23 08:27:13 INFO  com.example.sureoa.SureoaWebApplication:50 - Starting SureoaWebApplication on ASZAA-D216 with PID 31540 (started by songwenjia in E:\雅典娜项目\sureoa20180822)
+2018-08-23 08:27:13 INFO  com.example.sureoa.SureoaWebApplication:662 - No active profile set, falling back to default profiles: default
+2018-08-23 08:27:13 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37c7595: startup date [Thu Aug 23 08:27:13 CST 2018]; root of context hierarchy
+2018-08-23 08:27:14 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner:166 - No MyBatis mapper was found in '[com.example.sureoa]' package. Please check your configuration.
+2018-08-23 08:27:14 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner:166 - No MyBatis mapper was found in '[com.example.sureoa]' package. Please check your configuration.
+2018-08-23 08:27:15 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-08-23 08:27:15 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-08-23 08:27:15 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-08-23 08:27:15 INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8081"]
+2018-08-23 08:27:15 INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2018-08-23 08:27:15 INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-23 08:27:15 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-08-23 08:27:16 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2018-08-23 08:27:16 INFO  org.springframework.web.context.ContextLoader:285 - Root WebApplicationContext: initialization completed in 2659 ms
+2018-08-23 08:27:16 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/]
+2018-08-23 08:27:16 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-23 08:27:16 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-23 08:27:16 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-23 08:27:16 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-23 08:27:16 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-23 08:27:17 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37c7595: startup date [Thu Aug 23 08:27:13 CST 2018]; root of context hierarchy
+2018-08-23 08:27:17 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-23 08:27:17 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-23 08:27:17 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-23 08:27:17 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-23 08:27:17 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamicDataSource' defined in class path resource [com/baomidou/dynamic/datasource/spring/boot/DynamicDataSourceAutoConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-08-23 08:27:17 INFO  org.apache.catalina.core.StandardService:180 - Stopping service [Tomcat]
+2018-08-23 08:27:18 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-23 08:27:18 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
