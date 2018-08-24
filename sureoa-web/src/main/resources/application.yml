@@ -1,6 +1,8 @@
 #自定义 端口
 server:
   port: 8081
+  servlet:
+    context-path: /sureoa
 spring:
   datasource:
     druid:
@@ -38,5 +40,5 @@ mybatis-plus:
 logging:
   config: classpath:logback.xml
   level:
-    com.huan.shiro.dao.mapper: debug
+    com.example.sureoa.dao.mapper: debug
 

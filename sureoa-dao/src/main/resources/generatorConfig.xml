@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="test" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
+
+         <!--<commentGenerator>-->
+            <!--&lt;!&ndash; 这个元素用来去除指定生成的注释中是否包含生成的日期 false:表示保护 &ndash;&gt;-->
+            <!--&lt;!&ndash; 如果生成日期，会造成即使修改一个字段，整个实体类所有属性都会发生变化，不利于版本控制，所以设置为true &ndash;&gt;-->
+            <!--<property name="suppressDate" value="true" />-->
+            <!--&lt;!&ndash; 是否去除自动生成的注释 true：是 ： false:否 &ndash;&gt;-->
+            <!--<property name="suppressAllComments" value="false" />-->
+        <!--</commentGenerator>-->
+
+        <commentGenerator type="com.example.sureoa.dao.config.MyCommentGenerator">
+        </commentGenerator>
+
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@10.1.1.210:1521:athenats" userId="e3new"
+                        password="e3new.2017">
+            <property name="useInformationSchema" value="true"></property>
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <!-- This property is used to specify whether MyBatis Generator should
+                force the use of java.math.BigDecimal for DECIMAL and NUMERIC fields, -->
+            <property name="forceBigDecimals" value="false" />
+
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="entity"
+                            targetProject="sureoa-dao/src/main/java/com/example/sureoa/dao">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置 -->
+        <sqlMapGenerator targetPackage="mappers"
+                         targetProject="sureoa-dao/src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="mapper"
+                             targetProject="sureoa-dao/src/main/java/com/example/sureoa/dao">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 要生成哪些表 -->
+        <table tableName="Tab_问题件类型"
+               enableCountByExample="false" enableUpdateByExample="fales"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" ></table>
+    </context>
+</generatorConfiguration>

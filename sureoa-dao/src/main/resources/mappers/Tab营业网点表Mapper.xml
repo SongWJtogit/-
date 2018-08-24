@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.Tab营业网点表Mapper" >
+  <resultMap id="BaseResultMap" type="entity.Tab营业网点表" >
+    <id column="网点编号" property="网点编号" jdbcType="VARCHAR" />
+    <result column="网点名称" property="网点名称" jdbcType="VARCHAR" />
+    <result column="所属网点" property="所属网点" jdbcType="VARCHAR" />
+    <result column="本币币别" property="本币币别" jdbcType="VARCHAR" />
+    <result column="所属财务中心" property="所属财务中心" jdbcType="VARCHAR" />
+    <result column="网点数字码" property="网点数字码" jdbcType="VARCHAR" />
+    <result column="备注" property="备注" jdbcType="VARCHAR" />
+    <result column="特征码" property="特征码" jdbcType="VARCHAR" />
+    <result column="类型" property="类型" jdbcType="VARCHAR" />
+    <result column="电话" property="电话" jdbcType="VARCHAR" />
+    <result column="手机" property="手机" jdbcType="VARCHAR" />
+    <result column="负责人" property="负责人" jdbcType="VARCHAR" />
+    <result column="派送范围" property="派送范围" jdbcType="VARCHAR" />
+    <result column="所属大区" property="所属大区" jdbcType="VARCHAR" />
+    <result column="到付费率" property="到付费率" jdbcType="DECIMAL" />
+    <result column="寄件到付款应收比例" property="寄件到付款应收比例" jdbcType="DECIMAL" />
+    <result column="派件到付款退回比例" property="派件到付款退回比例" jdbcType="DECIMAL" />
+    <result column="默认发件地" property="默认发件地" jdbcType="VARCHAR" />
+    <result column="警戒金额" property="警戒金额" jdbcType="DECIMAL" />
+    <result column="启用标识" property="启用标识" jdbcType="VARCHAR" />
+    <result column="允许到付" property="允许到付" jdbcType="DECIMAL" />
+    <result column="查单地址" property="查单地址" jdbcType="VARCHAR" />
+    <result column="省份" property="省份" jdbcType="VARCHAR" />
+    <result column="城市" property="城市" jdbcType="VARCHAR" />
+    <result column="二级财务中心" property="二级财务中心" jdbcType="VARCHAR" />
+    <result column="所属二级财务中心" property="所属二级财务中心" jdbcType="VARCHAR" />
+    <result column="预付款标识" property="预付款标识" jdbcType="VARCHAR" />
+    <result column="状态" property="状态" jdbcType="VARCHAR" />
+    <result column="停用标识" property="停用标识" jdbcType="VARCHAR" />
+    <result column="扩展功能标识" property="扩展功能标识" jdbcType="VARCHAR" />
+    <result column="班车费" property="班车费" jdbcType="DECIMAL" />
+    <result column="国家" property="国家" jdbcType="VARCHAR" />
+    <result column="大区" property="大区" jdbcType="VARCHAR" />
+    <result column="单号规则标识" property="单号规则标识" jdbcType="DECIMAL" />
+    <result column="管理方式" property="管理方式" jdbcType="VARCHAR" />
+    <result column="传真" property="传真" jdbcType="VARCHAR" />
+    <result column="网点文件前缀" property="网点文件前缀" jdbcType="VARCHAR" />
+    <result column="代收款预收成功率" property="代收款预收成功率" jdbcType="DECIMAL" />
+    <result column="代收货款上限" property="代收货款上限" jdbcType="DECIMAL" />
+    <result column="财务电话" property="财务电话" jdbcType="VARCHAR" />
+    <result column="财务传真" property="财务传真" jdbcType="VARCHAR" />
+    <result column="派件时效" property="派件时效" jdbcType="DECIMAL" />
+    <result column="更新状态" property="更新状态" jdbcType="DECIMAL" />
+    <result column="更新时间" property="更新时间" jdbcType="TIMESTAMP" />
+    <result column="帐套中心" property="帐套中心" jdbcType="VARCHAR" />
+    <result column="启用淘宝" property="启用淘宝" jdbcType="DECIMAL" />
+    <result column="县" property="县" jdbcType="VARCHAR" />
+    <result column="ISDIRBACK" property="isdirback" jdbcType="DECIMAL" />
+    <result column="ONLYUSEFLAG" property="onlyuseflag" jdbcType="DECIMAL" />
+    <result column="寄件中转类区" property="寄件中转类区" jdbcType="VARCHAR" />
+    <result column="暂停标识" property="暂停标识" jdbcType="DECIMAL" />
+    <result column="退网标识" property="退网标识" jdbcType="DECIMAL" />
+    <result column="所属提交货中心" property="所属提交货中心" jdbcType="VARCHAR" />
+    <result column="语音播报" property="语音播报" jdbcType="VARCHAR" />
+    <result column="经度" property="经度" jdbcType="VARCHAR" />
+    <result column="纬度" property="纬度" jdbcType="VARCHAR" />
+    <result column="详细地址" property="详细地址" jdbcType="VARCHAR" />
+    <result column="邮政实名制" property="邮政实名制" jdbcType="VARCHAR" />
+    <result column="所属交货中心" property="所属交货中心" jdbcType="VARCHAR" />
+    <result column="承包区所属网点" property="承包区所属网点" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    网点编号, 网点名称, 所属网点, 本币币别, 所属财务中心, 网点数字码, 备注, 特征码, 类型, 电话, 手机, 负责人, 派送范围, 所属大区, 到付费率, 
+    寄件到付款应收比例, 派件到付款退回比例, 默认发件地, 警戒金额, 启用标识, 允许到付, 查单地址, 省份, 城市, 二级财务中心, 所属二级财务中心, 预付款标识, 
+    状态, 停用标识, 扩展功能标识, 班车费, 国家, 大区, 单号规则标识, 管理方式, 传真, 网点文件前缀, 代收款预收成功率, 代收货款上限, 财务电话, 
+    财务传真, 派件时效, 更新状态, 更新时间, 帐套中心, 启用淘宝, 县, ISDIRBACK, ONLYUSEFLAG, 寄件中转类区, 暂停标识, 退网标识, 
+    所属提交货中心, 语音播报, 经度, 纬度, 详细地址, 邮政实名制, 所属交货中心, 承包区所属网点
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from TAB_营业网点表
+    where 网点编号 = #{网点编号,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from TAB_营业网点表
+    where 网点编号 = #{网点编号,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="entity.Tab营业网点表" >
+    insert into TAB_营业网点表 (网点编号, 网点名称, 所属网点, 
+      本币币别, 所属财务中心, 网点数字码, 
+      备注, 特征码, 类型, 电话, 
+      手机, 负责人, 派送范围, 所属大区, 
+      到付费率, 寄件到付款应收比例, 派件到付款退回比例, 
+      默认发件地, 警戒金额, 启用标识, 
+      允许到付, 查单地址, 省份, 城市, 
+      二级财务中心, 所属二级财务中心, 预付款标识, 
+      状态, 停用标识, 扩展功能标识, 班车费, 
+      国家, 大区, 单号规则标识, 管理方式, 
+      传真, 网点文件前缀, 代收款预收成功率, 
+      代收货款上限, 财务电话, 财务传真, 
+      派件时效, 更新状态, 更新时间, 
+      帐套中心, 启用淘宝, 县, ISDIRBACK, 
+      ONLYUSEFLAG, 寄件中转类区, 暂停标识, 
+      退网标识, 所属提交货中心, 语音播报, 
+      经度, 纬度, 详细地址, 邮政实名制, 
+      所属交货中心, 承包区所属网点)
+    values (#{网点编号,jdbcType=VARCHAR}, #{网点名称,jdbcType=VARCHAR}, #{所属网点,jdbcType=VARCHAR}, 
+      #{本币币别,jdbcType=VARCHAR}, #{所属财务中心,jdbcType=VARCHAR}, #{网点数字码,jdbcType=VARCHAR}, 
+      #{备注,jdbcType=VARCHAR}, #{特征码,jdbcType=VARCHAR}, #{类型,jdbcType=VARCHAR}, #{电话,jdbcType=VARCHAR}, 
+      #{手机,jdbcType=VARCHAR}, #{负责人,jdbcType=VARCHAR}, #{派送范围,jdbcType=VARCHAR}, #{所属大区,jdbcType=VARCHAR}, 
+      #{到付费率,jdbcType=DECIMAL}, #{寄件到付款应收比例,jdbcType=DECIMAL}, #{派件到付款退回比例,jdbcType=DECIMAL}, 
+      #{默认发件地,jdbcType=VARCHAR}, #{警戒金额,jdbcType=DECIMAL}, #{启用标识,jdbcType=VARCHAR}, 
+      #{允许到付,jdbcType=DECIMAL}, #{查单地址,jdbcType=VARCHAR}, #{省份,jdbcType=VARCHAR}, #{城市,jdbcType=VARCHAR}, 
+      #{二级财务中心,jdbcType=VARCHAR}, #{所属二级财务中心,jdbcType=VARCHAR}, #{预付款标识,jdbcType=VARCHAR}, 
+      #{状态,jdbcType=VARCHAR}, #{停用标识,jdbcType=VARCHAR}, #{扩展功能标识,jdbcType=VARCHAR}, #{班车费,jdbcType=DECIMAL}, 
+      #{国家,jdbcType=VARCHAR}, #{大区,jdbcType=VARCHAR}, #{单号规则标识,jdbcType=DECIMAL}, #{管理方式,jdbcType=VARCHAR}, 
+      #{传真,jdbcType=VARCHAR}, #{网点文件前缀,jdbcType=VARCHAR}, #{代收款预收成功率,jdbcType=DECIMAL}, 
+      #{代收货款上限,jdbcType=DECIMAL}, #{财务电话,jdbcType=VARCHAR}, #{财务传真,jdbcType=VARCHAR}, 
+      #{派件时效,jdbcType=DECIMAL}, #{更新状态,jdbcType=DECIMAL}, #{更新时间,jdbcType=TIMESTAMP}, 
+      #{帐套中心,jdbcType=VARCHAR}, #{启用淘宝,jdbcType=DECIMAL}, #{县,jdbcType=VARCHAR}, #{isdirback,jdbcType=DECIMAL}, 
+      #{onlyuseflag,jdbcType=DECIMAL}, #{寄件中转类区,jdbcType=VARCHAR}, #{暂停标识,jdbcType=DECIMAL}, 
+      #{退网标识,jdbcType=DECIMAL}, #{所属提交货中心,jdbcType=VARCHAR}, #{语音播报,jdbcType=VARCHAR}, 
+      #{经度,jdbcType=VARCHAR}, #{纬度,jdbcType=VARCHAR}, #{详细地址,jdbcType=VARCHAR}, #{邮政实名制,jdbcType=VARCHAR}, 
+      #{所属交货中心,jdbcType=VARCHAR}, #{承包区所属网点,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.Tab营业网点表" >
+    insert into TAB_营业网点表
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="网点编号 != null" >
+        网点编号,
+      </if>
+      <if test="网点名称 != null" >
+        网点名称,
+      </if>
+      <if test="所属网点 != null" >
+        所属网点,
+      </if>
+      <if test="本币币别 != null" >
+        本币币别,
+      </if>
+      <if test="所属财务中心 != null" >
+        所属财务中心,
+      </if>
+      <if test="网点数字码 != null" >
+        网点数字码,
+      </if>
+      <if test="备注 != null" >
+        备注,
+      </if>
+      <if test="特征码 != null" >
+        特征码,
+      </if>
+      <if test="类型 != null" >
+        类型,
+      </if>
+      <if test="电话 != null" >
+        电话,
+      </if>
+      <if test="手机 != null" >
+        手机,
+      </if>
+      <if test="负责人 != null" >
+        负责人,
+      </if>
+      <if test="派送范围 != null" >
+        派送范围,
+      </if>
+      <if test="所属大区 != null" >
+        所属大区,
+      </if>
+      <if test="到付费率 != null" >
+        到付费率,
+      </if>
+      <if test="寄件到付款应收比例 != null" >
+        寄件到付款应收比例,
+      </if>
+      <if test="派件到付款退回比例 != null" >
+        派件到付款退回比例,
+      </if>
+      <if test="默认发件地 != null" >
+        默认发件地,
+      </if>
+      <if test="警戒金额 != null" >
+        警戒金额,
+      </if>
+      <if test="启用标识 != null" >
+        启用标识,
+      </if>
+      <if test="允许到付 != null" >
+        允许到付,
+      </if>
+      <if test="查单地址 != null" >
+        查单地址,
+      </if>
+      <if test="省份 != null" >
+        省份,
+      </if>
+      <if test="城市 != null" >
+        城市,
+      </if>
+      <if test="二级财务中心 != null" >
+        二级财务中心,
+      </if>
+      <if test="所属二级财务中心 != null" >
+        所属二级财务中心,
+      </if>
+      <if test="预付款标识 != null" >
+        预付款标识,
+      </if>
+      <if test="状态 != null" >
+        状态,
+      </if>
+      <if test="停用标识 != null" >
+        停用标识,
+      </if>
+      <if test="扩展功能标识 != null" >
+        扩展功能标识,
+      </if>
+      <if test="班车费 != null" >
+        班车费,
+      </if>
+      <if test="国家 != null" >
+        国家,
+      </if>
+      <if test="大区 != null" >
+        大区,
+      </if>
+      <if test="单号规则标识 != null" >
+        单号规则标识,
+      </if>
+      <if test="管理方式 != null" >
+        管理方式,
+      </if>
+      <if test="传真 != null" >
+        传真,
+      </if>
+      <if test="网点文件前缀 != null" >
+        网点文件前缀,
+      </if>
+      <if test="代收款预收成功率 != null" >
+        代收款预收成功率,
+      </if>
+      <if test="代收货款上限 != null" >
+        代收货款上限,
+      </if>
+      <if test="财务电话 != null" >
+        财务电话,
+      </if>
+      <if test="财务传真 != null" >
+        财务传真,
+      </if>
+      <if test="派件时效 != null" >
+        派件时效,
+      </if>
+      <if test="更新状态 != null" >
+        更新状态,
+      </if>
+      <if test="更新时间 != null" >
+        更新时间,
+      </if>
+      <if test="帐套中心 != null" >
+        帐套中心,
+      </if>
+      <if test="启用淘宝 != null" >
+        启用淘宝,
+      </if>
+      <if test="县 != null" >
+        县,
+      </if>
+      <if test="isdirback != null" >
+        ISDIRBACK,
+      </if>
+      <if test="onlyuseflag != null" >
+        ONLYUSEFLAG,
+      </if>
+      <if test="寄件中转类区 != null" >
+        寄件中转类区,
+      </if>
+      <if test="暂停标识 != null" >
+        暂停标识,
+      </if>
+      <if test="退网标识 != null" >
+        退网标识,
+      </if>
+      <if test="所属提交货中心 != null" >
+        所属提交货中心,
+      </if>
+      <if test="语音播报 != null" >
+        语音播报,
+      </if>
+      <if test="经度 != null" >
+        经度,
+      </if>
+      <if test="纬度 != null" >
+        纬度,
+      </if>
+      <if test="详细地址 != null" >
+        详细地址,
+      </if>
+      <if test="邮政实名制 != null" >
+        邮政实名制,
+      </if>
+      <if test="所属交货中心 != null" >
+        所属交货中心,
+      </if>
+      <if test="承包区所属网点 != null" >
+        承包区所属网点,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="网点编号 != null" >
+        #{网点编号,jdbcType=VARCHAR},
+      </if>
+      <if test="网点名称 != null" >
+        #{网点名称,jdbcType=VARCHAR},
+      </if>
+      <if test="所属网点 != null" >
+        #{所属网点,jdbcType=VARCHAR},
+      </if>
+      <if test="本币币别 != null" >
+        #{本币币别,jdbcType=VARCHAR},
+      </if>
+      <if test="所属财务中心 != null" >
+        #{所属财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="网点数字码 != null" >
+        #{网点数字码,jdbcType=VARCHAR},
+      </if>
+      <if test="备注 != null" >
+        #{备注,jdbcType=VARCHAR},
+      </if>
+      <if test="特征码 != null" >
+        #{特征码,jdbcType=VARCHAR},
+      </if>
+      <if test="类型 != null" >
+        #{类型,jdbcType=VARCHAR},
+      </if>
+      <if test="电话 != null" >
+        #{电话,jdbcType=VARCHAR},
+      </if>
+      <if test="手机 != null" >
+        #{手机,jdbcType=VARCHAR},
+      </if>
+      <if test="负责人 != null" >
+        #{负责人,jdbcType=VARCHAR},
+      </if>
+      <if test="派送范围 != null" >
+        #{派送范围,jdbcType=VARCHAR},
+      </if>
+      <if test="所属大区 != null" >
+        #{所属大区,jdbcType=VARCHAR},
+      </if>
+      <if test="到付费率 != null" >
+        #{到付费率,jdbcType=DECIMAL},
+      </if>
+      <if test="寄件到付款应收比例 != null" >
+        #{寄件到付款应收比例,jdbcType=DECIMAL},
+      </if>
+      <if test="派件到付款退回比例 != null" >
+        #{派件到付款退回比例,jdbcType=DECIMAL},
+      </if>
+      <if test="默认发件地 != null" >
+        #{默认发件地,jdbcType=VARCHAR},
+      </if>
+      <if test="警戒金额 != null" >
+        #{警戒金额,jdbcType=DECIMAL},
+      </if>
+      <if test="启用标识 != null" >
+        #{启用标识,jdbcType=VARCHAR},
+      </if>
+      <if test="允许到付 != null" >
+        #{允许到付,jdbcType=DECIMAL},
+      </if>
+      <if test="查单地址 != null" >
+        #{查单地址,jdbcType=VARCHAR},
+      </if>
+      <if test="省份 != null" >
+        #{省份,jdbcType=VARCHAR},
+      </if>
+      <if test="城市 != null" >
+        #{城市,jdbcType=VARCHAR},
+      </if>
+      <if test="二级财务中心 != null" >
+        #{二级财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="所属二级财务中心 != null" >
+        #{所属二级财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="预付款标识 != null" >
+        #{预付款标识,jdbcType=VARCHAR},
+      </if>
+      <if test="状态 != null" >
+        #{状态,jdbcType=VARCHAR},
+      </if>
+      <if test="停用标识 != null" >
+        #{停用标识,jdbcType=VARCHAR},
+      </if>
+      <if test="扩展功能标识 != null" >
+        #{扩展功能标识,jdbcType=VARCHAR},
+      </if>
+      <if test="班车费 != null" >
+        #{班车费,jdbcType=DECIMAL},
+      </if>
+      <if test="国家 != null" >
+        #{国家,jdbcType=VARCHAR},
+      </if>
+      <if test="大区 != null" >
+        #{大区,jdbcType=VARCHAR},
+      </if>
+      <if test="单号规则标识 != null" >
+        #{单号规则标识,jdbcType=DECIMAL},
+      </if>
+      <if test="管理方式 != null" >
+        #{管理方式,jdbcType=VARCHAR},
+      </if>
+      <if test="传真 != null" >
+        #{传真,jdbcType=VARCHAR},
+      </if>
+      <if test="网点文件前缀 != null" >
+        #{网点文件前缀,jdbcType=VARCHAR},
+      </if>
+      <if test="代收款预收成功率 != null" >
+        #{代收款预收成功率,jdbcType=DECIMAL},
+      </if>
+      <if test="代收货款上限 != null" >
+        #{代收货款上限,jdbcType=DECIMAL},
+      </if>
+      <if test="财务电话 != null" >
+        #{财务电话,jdbcType=VARCHAR},
+      </if>
+      <if test="财务传真 != null" >
+        #{财务传真,jdbcType=VARCHAR},
+      </if>
+      <if test="派件时效 != null" >
+        #{派件时效,jdbcType=DECIMAL},
+      </if>
+      <if test="更新状态 != null" >
+        #{更新状态,jdbcType=DECIMAL},
+      </if>
+      <if test="更新时间 != null" >
+        #{更新时间,jdbcType=TIMESTAMP},
+      </if>
+      <if test="帐套中心 != null" >
+        #{帐套中心,jdbcType=VARCHAR},
+      </if>
+      <if test="启用淘宝 != null" >
+        #{启用淘宝,jdbcType=DECIMAL},
+      </if>
+      <if test="县 != null" >
+        #{县,jdbcType=VARCHAR},
+      </if>
+      <if test="isdirback != null" >
+        #{isdirback,jdbcType=DECIMAL},
+      </if>
+      <if test="onlyuseflag != null" >
+        #{onlyuseflag,jdbcType=DECIMAL},
+      </if>
+      <if test="寄件中转类区 != null" >
+        #{寄件中转类区,jdbcType=VARCHAR},
+      </if>
+      <if test="暂停标识 != null" >
+        #{暂停标识,jdbcType=DECIMAL},
+      </if>
+      <if test="退网标识 != null" >
+        #{退网标识,jdbcType=DECIMAL},
+      </if>
+      <if test="所属提交货中心 != null" >
+        #{所属提交货中心,jdbcType=VARCHAR},
+      </if>
+      <if test="语音播报 != null" >
+        #{语音播报,jdbcType=VARCHAR},
+      </if>
+      <if test="经度 != null" >
+        #{经度,jdbcType=VARCHAR},
+      </if>
+      <if test="纬度 != null" >
+        #{纬度,jdbcType=VARCHAR},
+      </if>
+      <if test="详细地址 != null" >
+        #{详细地址,jdbcType=VARCHAR},
+      </if>
+      <if test="邮政实名制 != null" >
+        #{邮政实名制,jdbcType=VARCHAR},
+      </if>
+      <if test="所属交货中心 != null" >
+        #{所属交货中心,jdbcType=VARCHAR},
+      </if>
+      <if test="承包区所属网点 != null" >
+        #{承包区所属网点,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.Tab营业网点表" >
+    update TAB_营业网点表
+    <set >
+      <if test="网点名称 != null" >
+        网点名称 = #{网点名称,jdbcType=VARCHAR},
+      </if>
+      <if test="所属网点 != null" >
+        所属网点 = #{所属网点,jdbcType=VARCHAR},
+      </if>
+      <if test="本币币别 != null" >
+        本币币别 = #{本币币别,jdbcType=VARCHAR},
+      </if>
+      <if test="所属财务中心 != null" >
+        所属财务中心 = #{所属财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="网点数字码 != null" >
+        网点数字码 = #{网点数字码,jdbcType=VARCHAR},
+      </if>
+      <if test="备注 != null" >
+        备注 = #{备注,jdbcType=VARCHAR},
+      </if>
+      <if test="特征码 != null" >
+        特征码 = #{特征码,jdbcType=VARCHAR},
+      </if>
+      <if test="类型 != null" >
+        类型 = #{类型,jdbcType=VARCHAR},
+      </if>
+      <if test="电话 != null" >
+        电话 = #{电话,jdbcType=VARCHAR},
+      </if>
+      <if test="手机 != null" >
+        手机 = #{手机,jdbcType=VARCHAR},
+      </if>
+      <if test="负责人 != null" >
+        负责人 = #{负责人,jdbcType=VARCHAR},
+      </if>
+      <if test="派送范围 != null" >
+        派送范围 = #{派送范围,jdbcType=VARCHAR},
+      </if>
+      <if test="所属大区 != null" >
+        所属大区 = #{所属大区,jdbcType=VARCHAR},
+      </if>
+      <if test="到付费率 != null" >
+        到付费率 = #{到付费率,jdbcType=DECIMAL},
+      </if>
+      <if test="寄件到付款应收比例 != null" >
+        寄件到付款应收比例 = #{寄件到付款应收比例,jdbcType=DECIMAL},
+      </if>
+      <if test="派件到付款退回比例 != null" >
+        派件到付款退回比例 = #{派件到付款退回比例,jdbcType=DECIMAL},
+      </if>
+      <if test="默认发件地 != null" >
+        默认发件地 = #{默认发件地,jdbcType=VARCHAR},
+      </if>
+      <if test="警戒金额 != null" >
+        警戒金额 = #{警戒金额,jdbcType=DECIMAL},
+      </if>
+      <if test="启用标识 != null" >
+        启用标识 = #{启用标识,jdbcType=VARCHAR},
+      </if>
+      <if test="允许到付 != null" >
+        允许到付 = #{允许到付,jdbcType=DECIMAL},
+      </if>
+      <if test="查单地址 != null" >
+        查单地址 = #{查单地址,jdbcType=VARCHAR},
+      </if>
+      <if test="省份 != null" >
+        省份 = #{省份,jdbcType=VARCHAR},
+      </if>
+      <if test="城市 != null" >
+        城市 = #{城市,jdbcType=VARCHAR},
+      </if>
+      <if test="二级财务中心 != null" >
+        二级财务中心 = #{二级财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="所属二级财务中心 != null" >
+        所属二级财务中心 = #{所属二级财务中心,jdbcType=VARCHAR},
+      </if>
+      <if test="预付款标识 != null" >
+        预付款标识 = #{预付款标识,jdbcType=VARCHAR},
+      </if>
+      <if test="状态 != null" >
+        状态 = #{状态,jdbcType=VARCHAR},
+      </if>
+      <if test="停用标识 != null" >
+        停用标识 = #{停用标识,jdbcType=VARCHAR},
+      </if>
+      <if test="扩展功能标识 != null" >
+        扩展功能标识 = #{扩展功能标识,jdbcType=VARCHAR},
+      </if>
+      <if test="班车费 != null" >
+        班车费 = #{班车费,jdbcType=DECIMAL},
+      </if>
+      <if test="国家 != null" >
+        国家 = #{国家,jdbcType=VARCHAR},
+      </if>
+      <if test="大区 != null" >
+        大区 = #{大区,jdbcType=VARCHAR},
+      </if>
+      <if test="单号规则标识 != null" >
+        单号规则标识 = #{单号规则标识,jdbcType=DECIMAL},
+      </if>
+      <if test="管理方式 != null" >
+        管理方式 = #{管理方式,jdbcType=VARCHAR},
+      </if>
+      <if test="传真 != null" >
+        传真 = #{传真,jdbcType=VARCHAR},
+      </if>
+      <if test="网点文件前缀 != null" >
+        网点文件前缀 = #{网点文件前缀,jdbcType=VARCHAR},
+      </if>
+      <if test="代收款预收成功率 != null" >
+        代收款预收成功率 = #{代收款预收成功率,jdbcType=DECIMAL},
+      </if>
+      <if test="代收货款上限 != null" >
+        代收货款上限 = #{代收货款上限,jdbcType=DECIMAL},
+      </if>
+      <if test="财务电话 != null" >
+        财务电话 = #{财务电话,jdbcType=VARCHAR},
+      </if>
+      <if test="财务传真 != null" >
+        财务传真 = #{财务传真,jdbcType=VARCHAR},
+      </if>
+      <if test="派件时效 != null" >
+        派件时效 = #{派件时效,jdbcType=DECIMAL},
+      </if>
+      <if test="更新状态 != null" >
+        更新状态 = #{更新状态,jdbcType=DECIMAL},
+      </if>
+      <if test="更新时间 != null" >
+        更新时间 = #{更新时间,jdbcType=TIMESTAMP},
+      </if>
+      <if test="帐套中心 != null" >
+        帐套中心 = #{帐套中心,jdbcType=VARCHAR},
+      </if>
+      <if test="启用淘宝 != null" >
+        启用淘宝 = #{启用淘宝,jdbcType=DECIMAL},
+      </if>
+      <if test="县 != null" >
+        县 = #{县,jdbcType=VARCHAR},
+      </if>
+      <if test="isdirback != null" >
+        ISDIRBACK = #{isdirback,jdbcType=DECIMAL},
+      </if>
+      <if test="onlyuseflag != null" >
+        ONLYUSEFLAG = #{onlyuseflag,jdbcType=DECIMAL},
+      </if>
+      <if test="寄件中转类区 != null" >
+        寄件中转类区 = #{寄件中转类区,jdbcType=VARCHAR},
+      </if>
+      <if test="暂停标识 != null" >
+        暂停标识 = #{暂停标识,jdbcType=DECIMAL},
+      </if>
+      <if test="退网标识 != null" >
+        退网标识 = #{退网标识,jdbcType=DECIMAL},
+      </if>
+      <if test="所属提交货中心 != null" >
+        所属提交货中心 = #{所属提交货中心,jdbcType=VARCHAR},
+      </if>
+      <if test="语音播报 != null" >
+        语音播报 = #{语音播报,jdbcType=VARCHAR},
+      </if>
+      <if test="经度 != null" >
+        经度 = #{经度,jdbcType=VARCHAR},
+      </if>
+      <if test="纬度 != null" >
+        纬度 = #{纬度,jdbcType=VARCHAR},
+      </if>
+      <if test="详细地址 != null" >
+        详细地址 = #{详细地址,jdbcType=VARCHAR},
+      </if>
+      <if test="邮政实名制 != null" >
+        邮政实名制 = #{邮政实名制,jdbcType=VARCHAR},
+      </if>
+      <if test="所属交货中心 != null" >
+        所属交货中心 = #{所属交货中心,jdbcType=VARCHAR},
+      </if>
+      <if test="承包区所属网点 != null" >
+        承包区所属网点 = #{承包区所属网点,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where 网点编号 = #{网点编号,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.Tab营业网点表" >
+    update TAB_营业网点表
+    set 网点名称 = #{网点名称,jdbcType=VARCHAR},
+      所属网点 = #{所属网点,jdbcType=VARCHAR},
+      本币币别 = #{本币币别,jdbcType=VARCHAR},
+      所属财务中心 = #{所属财务中心,jdbcType=VARCHAR},
+      网点数字码 = #{网点数字码,jdbcType=VARCHAR},
+      备注 = #{备注,jdbcType=VARCHAR},
+      特征码 = #{特征码,jdbcType=VARCHAR},
+      类型 = #{类型,jdbcType=VARCHAR},
+      电话 = #{电话,jdbcType=VARCHAR},
+      手机 = #{手机,jdbcType=VARCHAR},
+      负责人 = #{负责人,jdbcType=VARCHAR},
+      派送范围 = #{派送范围,jdbcType=VARCHAR},
+      所属大区 = #{所属大区,jdbcType=VARCHAR},
+      到付费率 = #{到付费率,jdbcType=DECIMAL},
+      寄件到付款应收比例 = #{寄件到付款应收比例,jdbcType=DECIMAL},
+      派件到付款退回比例 = #{派件到付款退回比例,jdbcType=DECIMAL},
+      默认发件地 = #{默认发件地,jdbcType=VARCHAR},
+      警戒金额 = #{警戒金额,jdbcType=DECIMAL},
+      启用标识 = #{启用标识,jdbcType=VARCHAR},
+      允许到付 = #{允许到付,jdbcType=DECIMAL},
+      查单地址 = #{查单地址,jdbcType=VARCHAR},
+      省份 = #{省份,jdbcType=VARCHAR},
+      城市 = #{城市,jdbcType=VARCHAR},
+      二级财务中心 = #{二级财务中心,jdbcType=VARCHAR},
+      所属二级财务中心 = #{所属二级财务中心,jdbcType=VARCHAR},
+      预付款标识 = #{预付款标识,jdbcType=VARCHAR},
+      状态 = #{状态,jdbcType=VARCHAR},
+      停用标识 = #{停用标识,jdbcType=VARCHAR},
+      扩展功能标识 = #{扩展功能标识,jdbcType=VARCHAR},
+      班车费 = #{班车费,jdbcType=DECIMAL},
+      国家 = #{国家,jdbcType=VARCHAR},
+      大区 = #{大区,jdbcType=VARCHAR},
+      单号规则标识 = #{单号规则标识,jdbcType=DECIMAL},
+      管理方式 = #{管理方式,jdbcType=VARCHAR},
+      传真 = #{传真,jdbcType=VARCHAR},
+      网点文件前缀 = #{网点文件前缀,jdbcType=VARCHAR},
+      代收款预收成功率 = #{代收款预收成功率,jdbcType=DECIMAL},
+      代收货款上限 = #{代收货款上限,jdbcType=DECIMAL},
+      财务电话 = #{财务电话,jdbcType=VARCHAR},
+      财务传真 = #{财务传真,jdbcType=VARCHAR},
+      派件时效 = #{派件时效,jdbcType=DECIMAL},
+      更新状态 = #{更新状态,jdbcType=DECIMAL},
+      更新时间 = #{更新时间,jdbcType=TIMESTAMP},
+      帐套中心 = #{帐套中心,jdbcType=VARCHAR},
+      启用淘宝 = #{启用淘宝,jdbcType=DECIMAL},
+      县 = #{县,jdbcType=VARCHAR},
+      ISDIRBACK = #{isdirback,jdbcType=DECIMAL},
+      ONLYUSEFLAG = #{onlyuseflag,jdbcType=DECIMAL},
+      寄件中转类区 = #{寄件中转类区,jdbcType=VARCHAR},
+      暂停标识 = #{暂停标识,jdbcType=DECIMAL},
+      退网标识 = #{退网标识,jdbcType=DECIMAL},
+      所属提交货中心 = #{所属提交货中心,jdbcType=VARCHAR},
+      语音播报 = #{语音播报,jdbcType=VARCHAR},
+      经度 = #{经度,jdbcType=VARCHAR},
+      纬度 = #{纬度,jdbcType=VARCHAR},
+      详细地址 = #{详细地址,jdbcType=VARCHAR},
+      邮政实名制 = #{邮政实名制,jdbcType=VARCHAR},
+      所属交货中心 = #{所属交货中心,jdbcType=VARCHAR},
+      承包区所属网点 = #{承包区所属网点,jdbcType=VARCHAR}
+    where 网点编号 = #{网点编号,jdbcType=VARCHAR}
+  </update>
+</mapper>

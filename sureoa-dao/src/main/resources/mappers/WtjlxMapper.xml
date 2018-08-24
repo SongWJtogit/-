@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sureoa.dao.mapper.WtjlxMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.sureoa.dao.entity.WtjlxInfo">
+        <id column="序号" property="序号" />
+        <result column="WtjlxInfo" property="WtjlxInfo" />
+    </resultMap>
+
+</mapper>
