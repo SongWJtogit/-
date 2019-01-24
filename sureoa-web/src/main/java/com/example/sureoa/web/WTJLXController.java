@@ -15,6 +15,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/wtjlx")
 public class WTJLXController {
+
+
     @Resource
     private WtjlxService wtjlxService;
 

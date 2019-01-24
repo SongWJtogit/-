@@ -1,0 +1,39 @@
+2019-01-24 10:06:53 INFO  com.example.sureoa.SureoaWebApplication:50 - Starting SureoaWebApplication on ASZAA-D216 with PID 808 (started by songwenjia in E:\雅典娜项目\sureoa20180822)
+2019-01-24 10:06:53 INFO  com.example.sureoa.SureoaWebApplication:662 - No active profile set, falling back to default profiles: default
+2019-01-24 10:06:54 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68044f4: startup date [Thu Jan 24 10:06:54 CST 2019]; root of context hierarchy
+2019-01-24 10:07:24 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-01-24 10:07:34 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2019-01-24 10:07:35 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-01-24 10:07:35 INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8081"]
+2019-01-24 10:07:35 INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2019-01-24 10:07:35 INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-01-24 10:07:35 ERROR org.apache.catalina.core.AprLifecycleListener:180 - An incompatible version [1.2.12] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-01-24 10:07:38 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/sureoa]:180 - Initializing Spring embedded WebApplicationContext
+2019-01-24 10:07:38 INFO  org.springframework.web.context.ContextLoader:285 - Root WebApplicationContext: initialization completed in 43810 ms
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean:187 - Servlet statViewServlet mapped to [/druid/*]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-24 10:07:39 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-01-24 10:07:44 WARN  com.alibaba.druid.pool.DruidAbstractDataSource:1176 - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2019-01-24 10:07:46 INFO  com.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+2019-01-24 10:07:53 WARN  com.baomidou.mybatisplus.toolkit.TableInfoHelper:188 - Warn: Could not find @TableId in Class: com.example.sureoa.dao.entity.WtjlxInfo.
+2019-01-24 10:07:53 WARN  com.baomidou.mybatisplus.mapper.AutoSqlInjector:147 - class com.example.sureoa.dao.entity.WtjlxInfo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2019-01-24 10:08:01 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-24 10:08:03 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68044f4: startup date [Thu Jan 24 10:06:54 CST 2019]; root of context hierarchy
+2019-01-24 10:08:04 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547 - Mapped "{[/wtjlx/swj]}" onto public java.util.List com.example.sureoa.web.WTJLXController.getWtj()
+2019-01-24 10:08:04 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-24 10:08:04 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-24 10:08:04 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-24 10:08:04 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-24 10:08:08 INFO  org.springframework.ui.freemarker.SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68044f4: startup date [Thu Jan 24 10:06:54 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-01-24 10:08:08 INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-24 10:08:09 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-01-24 10:08:09 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter:895 - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-01-24 10:08:09 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter:668 - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-01-24 10:08:10 INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8081"]
+2019-01-24 10:08:10 INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2019-01-24 10:08:10 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path '/sureoa'
+2019-01-24 10:08:10 INFO  com.example.sureoa.SureoaWebApplication:59 - Started SureoaWebApplication in 90.377 seconds (JVM running for 130.712)
